@@ -9,6 +9,42 @@ html {
 	box-sizing:inherit;
 }
 
+button {
+	font-family: "Raleway", sans-serif;
+	background-color: #f15b31;
+	border-style: none;
+	text-transform: uppercase;
+	font-size:40px;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: 600;
+	padding: 3px 10px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#score {
+	font-family: "Raleway", sans-serif;
+	background: #f15b31;
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 30px;
+	width: 270px;
+	margin: 0 auto;
+	
+	
+
+}
+
+.scoreCount {
+	font-family: "Droid Serif", sans-serif;
+	font-size: 40px;
+	font-weight: 900;
+	padding: 0 10px;
+	
+}
+
 body {
 	text-align:center;
 	margin: 0 0;
@@ -75,7 +111,7 @@ p {
 }
 
 img{
-	margin:40px 8px;
+	margin:20px 8px;
 }
 
 footer {

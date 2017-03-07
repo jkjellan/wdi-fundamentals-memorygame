@@ -22,10 +22,13 @@ var cards = [
 	}
 ];
 var cardsInPlay = [];
+var score = 0;
+
 
 var checkForMatch = function() {
 	if(cardsInPlay[0] === cardsInPlay[1]){
 		alert("You found a match!");
+		score += 1;
 	}
 	else{
 		alert("Sorry, try again");
@@ -44,6 +47,7 @@ var flipCard = function () {
 
 	if(cardsInPlay.length === 2){
 		checkForMatch();
+		keepScore();
 	}
 };
 
@@ -55,7 +59,21 @@ var createBoard = function () {
 		cardElement.addEventListener('click',flipCard);
 		document.getElementById('game-board').appendChild(cardElement);
 
+		document.getElementById('reset').addEventListener('click',resetBoard);
+
+		keepScore();
+
 	}
+};
+
+var resetBoard = function () {
+	document.getElementById('game-board').innerHTML = ' ';
+	cardsInPlay = [];
+	createBoard();
+};
+
+var keepScore = function () {
+	document.getElementById('score').innerHTML = 'score: ' + '<span class="scoreCount">' + score + '</span>';
 };
 
 createBoard();
