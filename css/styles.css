@@ -20,6 +20,7 @@ button {
 	font-weight: 600;
 	padding: 3px 10px;
 	box-shadow: 10px 10px 5px #888888;
+	outline:none;
 }
 
 #score {
